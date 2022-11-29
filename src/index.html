@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <aside>
+      <h1>IdeaBox</h1>
+      <nav>
+        <h2>Filter Starred Ideas</h2>
+        <button id="filter-btn">Show Starred Ideas</button>
+      </nav>
+    </aside>
+    <main>
+      <form>
+        <label>Title</label>
+        <input id="title-input">
+        <label>Body</label>
+        <input id="body-input">
+        <button id="save-btn">Save</button>
+        <div class="search-container">
+          <button id="search-btn">?</button>
+          <input id="search-input">
+        </div>
+      </form>
+      <section class="card-container">
+        <!-- ideas go here -->
+      </section>
+    </main>
+  </body>
+</html>
