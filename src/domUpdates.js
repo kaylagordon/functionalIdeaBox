@@ -14,7 +14,7 @@ const displayIdeas = (ideas) => {
   ideas.forEach(idea => {
     cardContainer.innerHTML += `<section class="card" id="${idea.id}">
       <header>
-        <button class="favorite-btn">*</button>
+        <button class="favorite-btn ${!idea.favorite || 'favorite'}">*</button>
         <button class="delete-btn">X</button>
       </header>
       <section>

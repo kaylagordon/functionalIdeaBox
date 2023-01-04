@@ -21,6 +21,10 @@ form {
   align-items: center;
 }
 
+.favorite {
+  color: red;
+}
+
 textarea, 
 label,
 #save-btn,

@@ -31,6 +31,7 @@ const updateCard = (event) => {
 
   if(targetClassList.contains('favorite-btn')) {
     app.toggleFavorite(targetId);
+    showIdeas();
   } else if(targetClassList.contains('delete-btn')) {
     app.deleteIdea(targetId);
     showIdeas();
