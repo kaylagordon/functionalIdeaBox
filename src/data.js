@@ -8,12 +8,17 @@ const data = () => {
 
   const addIdea = (newIdea) => {
     ideas = [...ideas, newIdea];
+  }
+
+  const deleteIdea = (id) => {
+    ideas = ideas.filter(idea => idea.id !== id);
     console.log(ideas)
   }
 
   return {
     getIdeas,
-    addIdea
+    addIdea,
+    deleteIdea
   }
 
 }

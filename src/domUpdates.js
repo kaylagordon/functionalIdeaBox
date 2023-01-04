@@ -3,8 +3,10 @@ const cardContainer = document.querySelector('.card-container');
 
 // functions
 const displayIdeas = (ideas) => {
+  cardContainer.innerHTML = '';
+  
   ideas.forEach(idea => {
-    cardContainer.innerHTML += `<section class="card" id="card-${idea.id}">
+    cardContainer.innerHTML += `<section class="card" id="${idea.id}">
       <header>
         <button class="favorite-btn">*</button>
         <button class="delete-btn">X</button>
