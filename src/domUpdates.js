@@ -1,10 +1,16 @@
 // DOM elements
 const cardContainer = document.querySelector('.card-container');
+const filterBtn = document.querySelector('#filter-btn');
 
 // functions
+const clearInputs = (title, body) => {
+  title.value = '';
+  body.value = '';
+}
+
 const displayIdeas = (ideas) => {
   cardContainer.innerHTML = '';
-  
+
   ideas.forEach(idea => {
     cardContainer.innerHTML += `<section class="card" id="${idea.id}">
       <header>
@@ -15,16 +21,18 @@ const displayIdeas = (ideas) => {
         <h3>${idea.title}</h3>
         <p>${idea.body}</p>
       </section>
-      <footer>
-        <button class="comment-btn">+ Comment</button>
-      </footer>
     </section>`
   })
+}
+
+const updateFilterButton = (view) => {
+  filterBtn.innerText = `Show ${view} Ideas`;
 }
 
 
 // exports
 module.exports = {
   displayIdeas,
-
+  clearInputs,
+  updateFilterButton
 }
