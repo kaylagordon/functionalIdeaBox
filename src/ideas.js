@@ -1,5 +1,5 @@
 // function
-const data = () => {
+const ideasData = () => {
   let ideas = [];
   let view = 'All';
 
@@ -23,18 +23,6 @@ const data = () => {
     })
   }
 
-  const changeView = () => {
-    if (view === 'All') {
-      view = 'Starred';
-    } else {
-      view = 'All';
-    }
-  }
-
-  const getView = () => {
-    return view;
-  }
-
   const getFavorites = () => {
     return ideas.filter(idea => idea.favorite);
   }
@@ -44,12 +32,10 @@ const data = () => {
     addIdea,
     deleteIdea,
     toggleFavorite,
-    changeView,
-    getView,
     getFavorites
   }
 
 }
 
 // exports
-module.exports = data;
+module.exports = ideasData;

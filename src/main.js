@@ -1,12 +1,15 @@
 // imports
-import data from './data';
+import ideasData from './ideas';
+import viewData from './view';
+
 import {
   displayIdeas,
   clearInputs,
   updateFilterButton
 } from './domUpdates';
 
-const app = data();
+const app = ideasData();
+const view = viewData();
 
 // DOM elements
 const titleInput = document.querySelector('#title-input');
@@ -35,13 +38,13 @@ const updateCard = (event) => {
 }
 
 const toggleView = () => {
-  app.changeView();
-  updateFilterButton(app.getView());
+  updateFilterButton(view.getView());
+  view.changeView();
   showIdeas();
 }
 
 const showIdeas = () => {
-  if(app.getView() === 'All') {
+  if(view.getView() === 'All') {
     displayIdeas(app.getIdeas());
   } else {
     displayIdeas(app.getFavorites());
