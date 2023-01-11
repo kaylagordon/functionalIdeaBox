@@ -12,7 +12,7 @@
 - Pure Functions?  
   I tried to use pure functions as much as possible, by limiting side effects and focusing on what is being returned from the function. Looking at `ideas.js`, there are several examples of pure functions. That said, the reality of building a FE app is that not all of the functions can be pure.
 - Higher Order Functions?  
-  I used array prototype methods like `forEach` and `map`.
+  I used array prototype methods like `forEach` and `filter`.
 - Closures?  
   Yes! `ideasData` and `viewData`
 - Curried Functions?  
