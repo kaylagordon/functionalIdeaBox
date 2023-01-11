@@ -14,8 +14,11 @@
 - Higher Order Functions?  
   I used array prototype methods like `forEach` and `map`.
 - Closures?  
+  No
 - Curried Functions?  
+  No
 - Composition?  
+  No
 
 2. How did you go about creating your data model? Where is it in your code?  
 I used a function `ideasData` to store the data for the `ideas` array. I used a function `viewData` to store the data on which view was active (filtered or all). Each of those functions stored the data AND held all functions for updating that data.
