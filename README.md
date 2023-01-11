@@ -9,11 +9,13 @@
 ## Reflections
 
 1. Looking through your code, were you able to:
-- Make use of Pure Functions?
-- Make use of Higher Order Functions?
-- Make use of Closures?
-- Make use of Curried Functions?
-- Make use of Composition?
+- Make use of Pure Functions?  
+  I tried to use pure functions as much as possible, by limiting side effects and focusing on what is being returned from the function. Looking at `ideas.js`, there are several examples of pure functions. That said, the reality of building a FE app is that not all of the functions can be pure.
+- Make use of Higher Order Functions?  
+  I used array prototype methods like `forEach` and `map`.
+- Make use of Closures?  
+- Make use of Curried Functions?  
+- Make use of Composition?  
 
 2. How did you go about creating your data model? Where is it in your code?  
 I used a function `ideasData` to store the data for the `ideas` array. I used a function `viewData` to store the data on which view was active (filtered or all). Each of those functions stored the data AND held all functions for updating that data.
