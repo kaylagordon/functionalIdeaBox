@@ -14,7 +14,7 @@
 - Higher Order Functions?  
   I used array prototype methods like `forEach` and `map`.
 - Closures?  
-  No
+  Yes! `ideasData` and `viewData`
 - Curried Functions?  
   No
 - Composition?  
